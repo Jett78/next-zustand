@@ -1,8 +1,12 @@
 import React, { use } from 'react'
 import useCourseStore from '../zustand/CourseStore'
 
+interface Course {
+  id: string;
+  title: string;
+  status: boolean;
+}
 const Courselist:React.FC = () => {
-
   const{courses,removeCourse, toggleCourseStatus} = useCourseStore((state) => ({
     courses:state.courses,
     removeCourse:state.removeCourse,
