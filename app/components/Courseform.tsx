@@ -16,7 +16,7 @@ const Courseform:React.FC = () => {
     }
   return (
     <div>
-        <form action="" className='flex  justify-center items-center h-[50vh]'>
+        <form action="" className='flex  justify-center items-center mt-20'>
             <input type="text" value={coursetitle} onChange={(e) => {setCoursetitle(e.target.value)}} className='border outline-none h-10 pl-4' />
             <button onClick={handleSubmit} className='bg-black text-white h-10 w-36 font-semibold'>Add course</button>
         </form>
